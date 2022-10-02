@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'fonte01';
+  src: url('../05/fontes/Segoe\ UI.ttf');
+}
+
+@font-face {
+  font-family: 'fonte02';
+  src: url('../05/fontes/Segoe\ UI\ Bold.ttf');
+}
+
+@font-face {
+  font-family: 'fonte03';
+  src: url('../05/fontes/Segoe\ UI\ Bold\ Italic.ttf');
+}
+
+@font-face {
+  font-family: 'fonte04';
+  src: url('../05/fontes/Segoe\ UI\ Italic.ttf');
+}
+
+:root{
+  --font-padrao: 'fonte01';
+  --font-especial: 'fonte02';
+  --font-titulo: 'fonte03';
+  --font-link: 'fonte04';
+
+  --color-background: #EEEEEE;
+}
+
+body{
+  padding: 25px 0;
+}
+
+#main{
+  width: 90%;
+  margin: 15px auto;
+  padding: 50px;
+  background-color: var(--color-background);
+  border-radius: 7px;
+}
+
+#image{
+  padding: 80px 0;
+  margin: 50px 0;
+  background: white;
+  text-align: center;
+}

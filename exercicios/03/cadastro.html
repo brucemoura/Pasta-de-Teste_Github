@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cadastro.css" />
+    <link
+      rel="shortcut icon"
+      href="imagens/icon-music.svg"
+      type="image/x-icon"
+    />
+    <title>Login - Expot5</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html">
+          <div class="navegacao">
+            <img src="imagens/icon-music.svg" alt="" />
+            <h1>Expot5</h1>
+          </div>
+        </a>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <p>Não tem uma conta? Inscreva-se grátis e comece a curtir</p>
+        <form action="">
+          <fieldset class="info-basic">
+            <label for="">
+              Nome:
+              <input 
+              required 
+              placeholder="Nome" 
+              type="text" 
+              name="nome" 
+              id="nome" />
+            </label>
+            <label for="">
+              Qual e o seu E-mail:
+              <input
+                required
+                placeholder="Insira seu E-mail"
+                type="email"
+                name="email"
+                id="email" />
+            </label>
+
+            <label for="">
+              Confirme seu E-mail:
+              <input
+                required
+                placeholder="Insira o E-mail novamente"
+                type="confirm-email"
+                name="confirm-email"
+                id="email"
+              />
+            </label>
+
+            <label for="">
+              Telefone:
+              <input 
+              required 
+              placeholder="Telefone" 
+              type="tel" 
+              name="tel" 
+              id="tel" />
+            </label>
+
+            <label for="">
+              Crie uma Senha:
+              <input
+                pattern="[a-z0-5]{8,}"
+                required
+                placeholder="Insira sua senha"
+                type="password"
+                name="senha"
+                id="senha" />
+            </label>
+
+            <label for="">
+              Confirme sua Senha:
+              <input
+                pattern="[a-z0-5]{8,}"
+                required
+                placeholder="Insira novamente sua senha"
+                type="password"
+                nome="confirm-senha"
+                id="confirm-senha" />
+            </label>
+          </fieldset>
+
+          <fieldset class="data info-basic">
+            <label class="label-input" for="">
+              Dia:
+              <input
+                required
+                maxlength="2"
+                placeholder="Dia"
+                type="text"
+                name="dia"
+                id="dia"
+              />
+            </label>
+            <label class="label-input" for="">
+              Mês:
+              <select name="mes" id="mes">
+                <option value="">Mês</option>
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+              </select>
+            </label>
+
+            <label class="label-input" for="">
+              Ano:
+              <input
+                required
+                maxlength="4"
+                placeholder="Ano"
+                type="text"
+                name="ano"
+                id="ano"
+              />
+            </label>
+          </fieldset>
+
+          <fieldset class="genero info-basic">
+            <p>Genero:</p>
+              <div class="label-genero">
+                <input type="radio" name="mem" id="" /> <p>Masculino</p>
+              </div>
+              <div class="label-genero">
+                <input type="radio" name="mem" id="" /> <p>Feminino</p>
+              </div>
+            <br />
+
+
+            <label class="label-p" for="">
+              <p>
+                Porque deveriamos deixar você participar do nosso
+                aplicativo(seja breve)
+              </p>
+              <textarea name="" id="" cols="40" rows="5"></textarea>
+            </label>
+          </fieldset>
+
+          <button>Enviar</button>
+          
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

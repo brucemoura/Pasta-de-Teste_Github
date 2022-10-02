@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FORM-lário</title>
+  </head>
+  <body>
+    <div class="bkground">
+      <header>
+        <h1>freeCodeCamp <span>formulario de pesquisa</span></h1>
+        <p>Obrigado por disponibilizar seu tempo utilizando nossa plataforma</p>
+      </header>
+      <div class="principal">
+        <main>
+          <form action="">
+            <fieldset class="fborda">
+              <div class="form1">
+                <label for="nome">
+                  Nome
+                  <input
+                    placeholder="Digite seu Nome"
+                    class="form"
+                    required
+                    type="text"
+                    name="nome"
+                    id="nome"
+                  />
+                </label>
+              </div>
+
+              <div class="form1">
+                <label for="email">
+                  Email
+                  <input
+                    placeholder="Digite seu melhor E-mail"
+                    class="form"
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </label>
+              </div>
+
+              <div class="form1">
+                <label for="idade">
+                  Data de nascimento(opicional)
+                  <input
+                    placeholder="Data de nascimento"
+                    class="form"
+                    type="date"
+                    name="idade"
+                    id="idade"
+                  />
+                </label>
+              </div>
+
+              <div class="fborda">
+                Qual opção melhor descreve seu papel atual?
+                <select class="form" name="" id="">
+                  <option disabled selected value="">
+                    Selecionar Cargo Atual
+                  </option>
+                  <option value="estudante">estudante</option>
+                  <option value="trabalho">trabalho em tempo integral</option>
+                  <option value="aluno">aluno em tempo integral</option>
+                  <option value="pnd">prefira não dizer</option>
+                  <option value="outros">outros</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="fborda">
+              <p>Você recomendaria freeCodeCamp para um amigo?</p>
+              <label class="check"
+                ><input
+                  required
+                  type="radio"
+                  name="reco"
+                  id="reco"
+                />Definitivamente</label
+              >
+              <label class="check"
+                ><input
+                  required
+                  type="radio"
+                  name="reco"
+                  id="reco"
+                />Talvez</label
+              >
+              <label class="check"
+                ><input required type="radio" name="reco" id="reco" />Não tem
+                certeza</label
+              >
+            </fieldset>
+
+            <fieldset class="fborda">
+              <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+              <select class="form" name="" id="">
+                <option disabled selected value="">Selecionar uma opção</option>
+                <option value="desafio">Desafios</option>
+                <option value="projeto">Projetos</option>
+                <option value="Comunidade">Comunidade</option>
+                <option value="codigo_aberto">Código aberto</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="fborda">
+              <p>
+                O que você gostaria de ver melhorado?
+                <span>(Verifique tudo o que se aplica)</span>
+              </p>
+              <label class="check"
+                ><input type="checkbox" name="front" id="front" /> Projetos
+                Front-End</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="back" id="back" /> Projetos
+                Back-end</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="dados" id="dados" /> Visualização
+                de dados</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="desafio" id="desafio" />
+                Desafios</label
+              >
+              <label class="check"
+                ><input
+                  type="checkbox"
+                  name="codigo_aberto"
+                  id="codigo_aberto"
+                />
+                Comunidade de Código Aberto</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="ajuda" id="ajuda" /> Salas de
+                ajuda gitter</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="video" id="video" /> vídeos</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="encontros" id="encontros" />
+                Encontros da Cidade</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="wiki" id="wiki" /> Wiki</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="forum" id="forum" /> Fórum</label
+              >
+              <label class="check"
+                ><input type="checkbox" name="cursos" id="cursos" /> Cursos
+                Adicionais</label
+              >
+            </fieldset>
+
+            <div class="sugestao">
+              <fieldset class="fborda">
+                <p>Algum comentário ou sugestão?</p>
+                <label for="">
+                  <textarea
+                    placeholder="Insira seu comentário aqui..."
+                    name=""
+                    id=""
+                    cols="90"
+                    rows="10"
+                  ></textarea>
+                </label>
+              </fieldset>
+            </div>
+            <div class="button">
+              <input type="button" value="Enviar" />
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--Versão FreeCode Camp-->
+<!--
+
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formluario</title>
+</head>
+<body>
+  <h1 id="title">Título</h1>
+  <p id="description">A tag &lt;p&gt; &lt;/p&gt; serve para fazer um parágrafo, alem disso ele e um display="block"</p>
+    <form id="survey-form" action="">
+      <label id="name-label">
+        Nome
+        <input required placeholder="Digite seu Nome" class="name-label" type="text" name="name-label" id="name">
+      </label>
+
+      <label id="email-label">
+        Email
+        <input required placeholder="Digite seu melhor E-mail" class="form" type="email" name="email-label" id="email">
+      </label>
+
+      <label id="number-label">
+        Data de nascimento(opicional)
+        <input placeholder="Data de nascimento" class="form" type="number" name="number-label" id="number" min="8" max="16">
+      </label>
+
+      <select class="form" name="" id="dropdown">
+        <option disabled selected value="">Selecionar Cargo Atual</option>
+        <option value="estudante">estudante</option>
+        <option value="trabalho">trabalho em tempo integral</option>
+        <option value="aluno">aluno em tempo integral</option>
+        <option value="pnd">prefira não dizer</option>
+        <option value="outros">outros</option>
+      </select>
+
+      <input required type="radio" name="reco" id="reco" value="op">
+      <input required type="radio" name="reco" id="reco" value="op">
+
+      <input type="checkbox" name="front" id="front" value="1"> 
+      <input type="checkbox" name="back" id="back" value="2"> 
+      <input type="checkbox" name="dados" id="dados" value="3"> 
+
+
+      <label for=""><textarea placeholder="Insira seu comentário aqui..." name="" id="" cols="90" rows="10"></textarea></label>
+      <input type="submit" id="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+-->

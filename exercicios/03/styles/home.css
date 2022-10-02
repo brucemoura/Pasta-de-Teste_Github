@@ -1,0 +1,197 @@
+/*reseting global*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*fontes*/
+@font-face {
+  font-family: 'familia numero 1';
+  src: url('../fontes/RedHatDisplay-VariableFont_wght.ttf') ;
+}
+
+@font-face {
+  font-family: 'familia numero 2';
+  src: url('../fontes/static/RedHatDisplay-Bold.ttf') ;
+}
+
+@font-face {
+  font-family: 'familia numero 3';
+  src: url('../fontes/static/RedHatDisplay-Light.ttf') ;
+}
+
+@font-face {
+  font-family: 'familia numero 4';
+  src: url('../fontes/static/RedHatDisplay-SemiBold.ttf') ;
+}
+
+/*root*/
+:root{
+    --fonte-principal: 'familia numero 1';
+    --fonte-destaque: 'familia numero 2';
+    --fonte-plano: 'familia numero 3';
+    --fonte-link: 'familia numero 4';
+}
+
+/*conteudo principal*/
+body{
+  background-color: rgb(196, 207, 255);
+}
+
+
+main{
+  background: #ffffff;
+  width: 45%;
+  height: 100%;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 7px;
+  box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.39);;
+}
+
+
+/*menu de navegação e imagem*/
+.navegacao{
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  background-image: url('../imagens/illustration-hero.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav > ul > li{
+  float: right;
+  list-style-type: none;
+  padding: 4px;
+  margin: 10px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--fonte-link);
+}
+
+nav > ul > li > a:hover{
+  text-decoration: none;
+  color: black;
+  font-family: var(--fonte-link);
+}
+
+/*titulo e paragrafo*/
+.center{
+  text-align: center;
+  width: 75%;
+  min-width: 150px;
+  margin: 0 auto;
+}
+
+.text-center{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.texto h2{
+  font-family: var(--fonte-destaque);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.texto p{
+  font-family: var(--fonte-principal);
+}
+
+/*plano, mudar e pagamento*/
+.plan{
+  width: 70%;
+  height: 30%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(233, 233, 233, 0.589);
+  background-image: url('../imagens/icon-music.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 20% 22%;
+}
+
+.plan p{
+  font-family: var(--fonte-plano);
+  display: inline-block;
+  
+}
+
+.plan a{
+  font-size: 22px;
+  font-family: var(--fonte-link);
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(2, 45, 189);
+}
+
+.plan a:hover{
+  color: rgb(0, 15, 99);
+}
+
+.p{
+  display: inline-block;
+  margin-left: 60px;
+}
+
+button{
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #3e14f8;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: var(--fonte-link);
+}
+
+button:hover{
+  color: black;
+}
+
+/*cancelar ordem*/
+.cancel{
+  width: 100%;
+  padding: 15px;
+  background-color: #4231ff;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+}
+.cancel > a{
+  margin: auto;
+  font-size: 20px;
+  font-family: var(--fonte-destaque);
+  text-decoration: none;
+  color: white;
+}
+
+.cancel > a:hover{
+  color: black;
+}
+
+/*media queries */
+@media (max-width: 1110px) {
+  main{
+    width: 55%;
+  }
+}
+
+@media (max-width: 750px){
+  main{
+    width: 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  main {
+    width: 90%;
+  }
+}

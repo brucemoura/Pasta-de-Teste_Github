@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabela{
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+span{
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 15px auto;
+}
+
+td, th{
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+td{
+  padding: 10px 30px;
+  text-align: left;
+}
+
+h1{
+  text-align: center;
+}
+
+.blue{
+  color: blue;
+}
+
+.menor{
+  font-size: small;
+}
+
+.separador{
+  height: 2px;
+  width: 100%;
+  background-color: rgb(117, 117, 117);
+  margin: 40px 0;
+}

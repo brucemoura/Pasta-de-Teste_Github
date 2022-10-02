@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>
+          Click here to view more
+          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.
+        </p>
+        <a href="https://freecatphotoapp.com">
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."/>
+        </a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <!--O elemento figure representa um conteúdo auto-contido e permitirá que você associe uma imagem com uma legenda-->
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+          />
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+          <!--o figcaption é usado para adicionar uma legenda para descrever a imagem contida dentro do elemento figure-->
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="Five cats looking around a field."
+          />
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <!--O atributo action indica para onde os dados do formulário devem ser enviados. Por exemplo, <form action="/submit-url"></form> informa ao navegador que os dados do formulário devem ser enviados para o caminho /submit-url.-->
+          <fieldset>
+            <!--O elemento fieldset é usado para agrupar entradas (inputs) e rótulos (labels) relacionados em um formulário da web. -->
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <!--O elemento legend atua como uma legenda para o conteúdo do elemento fieldset. Ele dá aos usuários um contexto sobre o que devem inserir nessa parte do formulário.-->
+            <label>
+              <!--Os elementos label são usados para ajudar a associar o texto de um elemento input com o próprio elemento input (especialmente para tecnologias assistivas como leitores de tela). 
+              Por exemplo, <label for="nome-del-ligação"><input type="radio" name="" id="nome-del-ligação"> cat</label>
+              Também torna-se possível que clicar na palavra cat também selecione o botão de opção correspondente.-->
+              <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked
+              />
+              <!--Se você selecionar o botão de opção Indoor e enviar o formulário, os dados de formulário para o botão são baseados em seus atributos name e value. Como seus botões de opção não têm um atributo value, os dados do formulário incluirão indoor-outdoor=on, o que é inútil quando você tem vários botões.-->
+              <!--Observe que os dois botões de opção podem ser selecionados ao mesmo tempo. Para fazer com que selecionar um botão de opção automaticamente desmarque a seleção do outro, os dois botões devem ter um atributo de name com o mesmo valor.-->
+              <!--Embora você não veja isso no navegador, colocar o atributo name="" facilita para o servidor o processar o formulário da web, especialmente quando há várias caixas de seleção.-->
+              <!--Para que uma caixa de seleção ou botão de opção esteja selecionado por padrão, você precisa adicionar o atributo checked ao elemento.-->
+              Indoor
+            </label>
+            <label
+              ><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <inpu id="loving type="checkbox name="personality value="loving checked
+            />
+            <!--acima vimos o label, Existe outra maneira de associar o texto de um elemento input com o elemento em si. Você pode colocar o texto dentro de um elemento label e adicionar um atributo for="" com o mesmo valor que o atributo id do elemento input.-->
+            <!--Para que uma caixa de seleção ou botão de opção esteja selecionado por padrão, você precisa adicionar o atributo checked ao elemento.-->
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required  
+          /><!--Para evitar que um usuário envie o formulário quando as informações necessárias estiverem faltando, você precisa adicionar o atributo required a um elemento input-->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>

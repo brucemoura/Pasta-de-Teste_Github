@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+
+    <form action="https://register-demo.freecodecamp.org">
+    <!--O atributo action indica para onde os dados do formulário devem ser enviados. 
+    Por exemplo, <form action="/submit-url"></form> informa ao navegador que os dados do formulário devem ser enviados para o caminho /submit-url.-->
+
+      <!--1º fieldset-->
+      <fieldset>
+      <!--O elemento fieldset é usado para agrupar entradas (inputs) e rótulos (labels) relacionados em um formulário da web. -->
+      <legend>form to create a new google account</legend>
+      <!--O elemento legend atua como uma legenda para o conteúdo do elemento fieldset. Ele dá aos usuários um contexto sobre o que devem inserir nessa parte do formulário.-->
+        <label>
+        <!--Os elementos label são usados para ajudar a associar o texto de um elemento input com o próprio elemento input (especialmente para tecnologias assistivas como leitores de tela). 
+        Por exemplo, <label for="nome-del-ligação"><input type="radio" name="" id="nome-del-ligação"> cat</label> 
+        Também torna-se possível que clicar na palavra cat também selecione o botão de opção correspondente.-->
+          Enter Your First Name: <input type="text" name="first-name" required
+        /></label>
+
+        <label>
+          Enter Your Last Name: <input type="text" name="last-name" required
+        /></label>
+        <label
+          >Enter Your Email: <input type="email" name="email" required
+        /></label>
+        <label
+          >Create a New Password:
+          <input
+            type="password"
+            name="password"
+            pattern="[a-z0-5]{8,}"
+            required
+        />
+        <!--Adicione um atributo pattern ao elemento input de senha para exigir que a entrada corresponda aos valores: [a-z0-5]{8,}de 'a' a 'z' de '0' a '5' e maximo de 8 caracteres-->
+        <!--Se você selecionar o botão de opção Indoor e enviar o formulário, os dados de formulário para o botão são baseados em seus atributos name e value. Como seus botões de opção não têm um atributo value, os dados do formulário incluirão indoor-outdoor=on, o que é inútil quando você tem vários botões.-->
+        <!--Observe que os dois botões de opção podem ser selecionados ao mesmo tempo. Para fazer com que selecionar um botão de opção automaticamente desmarque a seleção do outro, os dois botões devem ter um atributo de name com o mesmo valor.-->
+        <!--Embora você não veja isso no navegador, colocar o atributo name="" facilita para o servidor o processar o formulário da web, especialmente quando há várias caixas de seleção.-->
+        <!--Para que uma caixa de seleção ou botão de opção esteja selecionado por padrão, você precisa adicionar o atributo checked ao elemento.-->
+        <!--Para que uma caixa de seleção ou botão de opção esteja selecionado por padrão, você precisa adicionar o atributo checked ao elemento.-->
+        <!--Para evitar que um usuário envie o formulário quando as informações necessárias estiverem faltando, você precisa adicionar o atributo required a um elemento input-->
+
+      </label>
+      </fieldset>
+
+      <!--2º fieldset-->
+      <fieldset>
+        <label>
+          <input type="radio" name="account-type" class="inline" /> Personal Account
+        </label>
+        <label>
+          <input type="radio" name="account-type" class="inline" /> Business Account
+        </label>
+        <label>
+          <input type="checkbox" name="terms" class="inline" required /> Iaccept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+
+      <!--3º fieldset-->
+      <fieldset>
+        <label>
+          Upload a profile picture: 
+          <input type="file" name="file"/>
+        </label>
+        <label>
+          Input your age (years):
+          <input type="number" name="age" min="13" max="120" />
+        </label>
+        <label>
+          How did you hear about us?
+          <select name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+          <!--Adicionar uma lista suspensa ao formulário é fácil com o elemento select. O elemento select é um repositório para um grupo de elementos option e o elemento option funciona como um rótulo para cada opção de seleção. Os dois elementos requerem tags de fechamento.-->
+        </label>
+        <label>
+          Provide a bio:
+          <textarea
+            name="bio"
+            rows="3"
+            cols="30"
+            placeholder="I like coding on the beach..."
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+
+    </form>
+  </body>
+</html>

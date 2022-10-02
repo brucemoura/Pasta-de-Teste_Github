@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h1>CSS FLEXBOX PHOTO GALLERY</h1>
+  </div>
+  <div id="gallery">
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" alt="texto alternativo a imagem"/>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/10.jpg" alt="texto alternativo a imagem"/>
+  </div>
+  <!--Flexbox é uma abordagem de layout de CSS unidimensional que se concentra no fluxo de conteúdo. Ele oferece a capacidade de controlar a maneira como os itens são espaçados e alinhados dentro de um contêiner.-->
+
+  <!--Podemos pensar o Flexbox como tendo dois eixos, o eixo principal e o eixo transversal. O eixo principal é determinado pela propriedade flex-direction. Se flex-direction estiver definido como row ou row-reverse, o eixo principal é horizontal. Se flex-direction estiver definido como column ou column-reverse, o eixo principal é vertical.-->
+
+  <!--
+    O Flexbox tem um eixo principal e um eixo cruzado. O eixo principal é definido pela propriedade flex-direction, que tem quatro valores possíveis:
+    row (padrão): eixo horizontal com os itens flex items da esquerda para a direita
+    row-reverse: eixo horizontal com os itens flex da direita para a esquerda
+    column: eixo vertical com os itens flex de cima para baixo
+    column-reverse: eixo vertical com os itens flex de baixo para cima
+  -->
+
+  <!--A propriedade flex-wrap determina como seus itens devem se comportar quando o contêiner flex é muito pequeno. Definir esta propriedade como wrap permitirá que seus itens sejam envolvidos na próxima linha/coluna (dependendo do seu eixo principal), enquanto nowrap impedirá esse movimento. Quando esse valor estiver definido como nowrap, os itens poderão encolher para se encaixarem ou ultrapassar o limite.-->
+
+  <!--A propriedade justify-content determina como os itens dentro de um contêiner flex são posicionados no eixo principal, afetando a posição e o espaço ao seu redor.-->
+
+  <!--A propriedade align-items posiciona o conteúdo do flex ao longo do eixo transversal. Neste caso, com flex-direction definido como row, o eixo cruzado seria vertical.-->
+
+  <!--Algumas de suas imagens podem ficar distorcidas. Isto ocorre porque as imagens têm proporções diferentes. Em vez de definir cada proporção individualmente, você pode usar a propriedade object-fit para determinar como as imagens devem se comportar.-->
+
+  <!--Suas imagens precisam de espaço entre elas. A propriedade abreviada gap do CSS define as lacunas (gaps), ambém conhecidas como calhas, entre as linhas e as colunas. A propriedade gap e suas subpropriedades row-gap e column-gap fornecem essa funcionalidade para layouts flex, grid e multicolunas. Você aplica a propriedade ao elemento contêiner.-->
+</body>
+</html>

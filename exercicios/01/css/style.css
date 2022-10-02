@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(17, 117, 117, 0.582);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1, p{
+  font-size: 30px;
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+}
+
+.quadrado{
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+/*
+.quadrado p{
+  display: inline-block;
+}
+*/
+.dois{
+  background-color: red;
+}
